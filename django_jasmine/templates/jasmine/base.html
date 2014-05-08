@@ -57,7 +57,7 @@
     {% else  %}
     <!-- Loading specs without webassets -->
         {% for file in files %}
-        <script src="{% url jasmine_test file %}"></script>
+        <script src="{% url 'jasmine_test' file %}"></script>
         {% endfor %}
     {% endif %}
 
